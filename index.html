@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>20/20 Vision Reminder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="icon.png" alt="App Icon" class="app-icon">
+            <h1 class="title">20/20 Vision Reminder</h1>
+            <p class="description">
+                Reminds you to follow the 20/20 rule—take a 20-second break every 20 minutes to look at something 20 feet away, reducing eye strain and promoting eye health.
+            </p>
+        </div>
+        
+        <div class="language-selection">
+            <label for="languageSelect">Select Speech Language: </label>
+            <select id="languageSelect">
+                <option value="english">English</option>
+                <option value="hindi">Hindi</option>
+            </select>
+        </div>
+
+        <div class="timer-input">
+            <div class="input-group">
+                <label for="workTimerInput">Work Time (minutes):</label>
+                <input type="number" id="workTimerInput" min="1" max="60" value="20">
+            </div>
+            <div class="input-group">
+                <label for="breakTimerInput">Break Time (seconds):</label>
+                <input type="number" id="breakTimerInput" min="1" max="60" value="20">
+            </div>
+        </div>
+
+        <div class="timer-section">
+            <h3>Work Timer</h3>
+            <div id="workTimer" class="timer">00:20:00</div>
+            <div class="button-container">
+                <button id="startWorkButton" class="decorated">
+                    <img src="play.png" alt="Start" class="icon">
+                </button>
+                <button id="stopWorkButton" class="decorated" style="display: none;">
+                    <img src="stop.png" alt="Stop" class="icon">
+                </button>
+                <button id="playPauseWorkButton" class="decorated" style="display: none;">
+                    <img src="pause.png" alt="Pause" class="icon">
+                </button>
+            </div>
+        </div>
+
+        <div class="timer-section">
+            <h3>Break Timer</h3>
+            <div id="breakTimer" class="timer">00:00:20</div>
+            <div class="button-container">
+                <button id="startBreakButton" class="decorated">
+                    <img src="play.png" alt="Start" class="icon">
+                </button>
+                <button id="stopBreakButton" class="decorated" style="display: none;">
+                    <img src="stop.png" alt="Stop" class="icon">
+                </button>
+                <button id="playPauseBreakButton" class="decorated" style="display: none;">
+                    <img src="pause.png" alt="Pause" class="icon">
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <audio id="notificationSound1_hindi" src="hin_take_break.mp3" preload="auto"></audio>
+    <audio id="notificationSound2_hindi" src="hin_over_break.mp3" preload="auto"></audio>
+    <audio id="notificationSound1_english" src="eng_take_break.mp3" preload="auto"></audio>
+    <audio id="notificationSound2_english" src="eng_over_break.mp3" preload="auto"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>

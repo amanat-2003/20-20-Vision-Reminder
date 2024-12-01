@@ -1,0 +1,175 @@
+/* Full website layout */
+body {
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Container for the header section */
+.header {
+    text-align: center;
+    padding-top: 10px;
+}
+
+/* Styling for the icon image */
+.app-icon {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Styling for the title */
+.title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+/* Styling for the description */
+.description {
+    font-size: 14px;
+    color: #666;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.4;
+}
+
+/* Container for timer and buttons */
+.container {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Timer display style */
+.timer {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    background: #f0f0f0;
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Buttons in a row */
+.button-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    gap: 15px;
+}
+
+/* Button styling with icons */
+.decorated {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s;
+}
+
+/* Hover effect for buttons */
+.decorated:hover {
+    transform: scale(1.1);
+}
+
+/* Remove focus outline for better appearance */
+.decorated:focus {
+    outline: none;
+}
+
+/* Icon size limitation */
+.icon {
+    width: 40px;
+    height: 40px;
+}
+
+/* Style the language selection dropdown */
+.language-selection {
+    margin-top: 0;
+    font-size: 14px;
+}
+
+#languageSelect {
+    padding: 6px;
+    font-size: 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.timer-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+
+
+/* New styles for timer input section */
+.timer-input {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 15px;
+    gap: 20px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.input-group label {
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #666;
+}
+
+.input-group input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: #4a90e2;
+    box-shadow: 0 0 5px rgba(74, 144, 226, 0.3);
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+    .timer-input {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .input-group {
+        width: 100%;
+    }
+}
