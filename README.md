@@ -1,4 +1,3 @@
-```markdown
 # 20/20 Vision Reminder  
 
 👁️ **Take care of your eyes while working on screens!**  
@@ -47,4 +46,3 @@ This project is licensed under the MIT License. See the `LICENSE` file for more 
 
 ---
 🌟 **Give it a try and share your feedback! Together, let's take care of our eyes!** 😊  
-```  
